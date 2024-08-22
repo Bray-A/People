@@ -15,11 +15,11 @@ public class PersonService {
     private PersonRepository personRepository;
 
     public void addPerson(String name, int age) {
-        personRepository.save(new Person(name, age)); // Saves to the database
+        personRepository.save(new Person(name, age));
     }
 
     public List<Person> getAllPeople() {
-        return personRepository.findAll(); // Retrieves all people from the database
+        return personRepository.findAll();
     }
 
     public Map<String, Integer> getNameToAgeMap() {
